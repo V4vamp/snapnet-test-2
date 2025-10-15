@@ -1,16 +1,71 @@
 .App {
-  width: 100%;
+  width: 100vw;
   height: 100dvh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  /* padding: 222px 156px; */
+  box-sizing: border-box;
+}
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  box-sizing: border-box;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.container {
+  background-color: #101010;
+  width: 70%;
+  height: 80%;
+  border-radius: 32px;
+  padding: 20px 40px;
+  box-sizing: border-box;
+}
+
+.container main {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.text {
+  width: 49%;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  background-color: #101010;
+  justify-content: center;
+  gap: 20px;
+  
+}
+.image {
+  width: 49%;
+  height: 100%;
 
-  nav {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-    box-sizing: border-box;
-  }
+}
+.img-container {
+  width:100%;
+  height:80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
 }
